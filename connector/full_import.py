@@ -10,6 +10,7 @@ import json
 class FullImport(BaseFullImport):
     def __init__(self):
         super().__init__()
+        # this is takign 25 mins to run on short queries
         # initialize the data handler.
         # If data source doesn't have external reference property None can be supplied as parameter.
         self.data_handler = DataHandler()
